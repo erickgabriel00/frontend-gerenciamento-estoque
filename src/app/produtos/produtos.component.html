@@ -1,0 +1,140 @@
+<div class="row">
+  <div class="col-md-12 d-flex align-items-stretch grid-margin">
+    <div class="row flex-grow">
+      <div class="col-md-12 grid-margin stretch-card">
+        <!--<div class="card">-->
+          <!--<div class="card-body">-->
+            <ngb-tabset class="tab-solid tab-solid-primary">
+              <ngb-tab>
+                <ng-template ngbTabTitle>
+                  <i class="mdi mdi-home-outline"></i>Cadastro
+                </ng-template>
+                <ng-template ngbTabContent>
+                  <form class="forms-sample">
+                    <div class="form-group">
+                      <label>Nome do produto</label>
+                      <input type="text" formControlName="nomeProduto" placeholder="Nome do produto">
+                    </div>
+                    <div class="form-group">
+                      <label>Código do produto</label>
+                      <input type="text" formControlName="codigoProduto" placeholder="Código do produto">
+                    </div>
+                    <div class="form-group">
+                      <label>Marca</label>
+                      <input type="text" formControlName="marca" placeholder="Marca">
+                    </div>
+                    <div class="form-group">
+                      <label>Unidade</label>
+                      <input type="text" formControlName="unidade" placeholder="Unidade">
+                    </div>
+                    <div class="form-group">
+                      <label>Peso - em kg</label>
+                      <input type="text" formControlName="peso" placeholder="Peso - em kg">
+                    </div>
+                    <div class="form-group">
+                      <label>Localização no estoque</label>
+                      <input type="text" formControlName="localizacao" placeholder="Localização no estoque">
+                    </div>
+                    <div class="form-group">
+                      <label>Estoque mínimo</label>
+                      <input type="text" formControlName="estoqueMin" placeholder="Estoque mínimo">
+                    </div>
+                    <div class="form-group">
+                      <label>Estoque máximo</label>
+                      <input type="text" formControlName="estoqueMax" placeholder="Estoque máximo">
+                    </div>
+                    <div class="form-group">
+                      <label>Código GTIN/EAN</label>
+                        <input type="text" formControlName="codigoGtinEan" placeholder="Código GTIN/EAN">
+                    </div>
+                    <div class="form-group">
+                      <label>Valor de venda</label>
+                      <input type="text" formControlName="valorVenda" placeholder="Valor de venda">
+                    </div>
+                    <div class="form-group">
+                      <label>Valor de custo</label>
+                      <input type="text" formControlName="valorCusto" placeholder="Valor de custo">
+                    </div>
+                    <div class="form-group">
+                      <label>Tamanho do produto</label>
+                      <input type="text" formControlName="tamanhoProduto" placeholder="Tamanho do produto">
+                    </div>
+                    <div class="form-group">
+                      <label>Número da ordem</label>
+                      <input type="text" formControlName="numOrdem" placeholder="Número da ordem">
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2" (click)="insertProduto()">Salvar</button>
+                    <button class="btn btn-light">Cancelar</button>
+                  </form>
+                </ng-template>
+              </ngb-tab>
+
+              <ngb-tab>
+                <ng-template ngbTabTitle>
+                  <!--<div [ngBusy]="{busy: busy, message: 'Por favor aguarde...'}"></div>-->
+                  <!--<div class="card" *ngIf="listagemProdutos.length > 0"></div>-->
+
+                  <i class="mdi mdi-home-outline"></i>Listagem de produtos
+                </ng-template>
+                <ng-template ngbTabContent>
+                  <div class="card-body text-center">
+                    <div class="table-responsive table-bordered">
+                      <!--<div class="pull-right mt-2 mr-2">-->
+                      <!--<button class="btn btn-hero-info btn-icon" style="cursor: pointer" type="button" title="Clique aqui para abrir o gráfico" (click)="graficoEvolucao(indice)">-->
+                      <!--<i class="nb-bar-chart"></i>-->
+                      <!--</button>-->
+                      <!--</div>-->
+                      <table class="table table-responsive table-bordered table-light">
+                        <thead>
+                        <tr>
+                          <th scope="col">Nome do produto</th>
+                          <th scope="col">Código</th>
+                          <th scope="col">Marca</th>
+                          <th scope="col">Unidade</th>
+                          <th scope="col">Peso</th>
+                          <th scope="col">Estoque mínimo</th>
+                          <th scope="col">Estoque máx.</th>
+                          <th scope="col">Valor venda</th>
+                          <th scope="col">Valor custo</th>
+                          <th scope="col">Tamanho</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td><b>SABONETES</b></td>
+                          <td>00000</td>
+                          <td>Protex</td>
+                          <td>50</td>
+                          <td>50 gramas</td>
+                          <td>1 caixa</td>
+                          <td>100 caixas</td>
+                          <td>R$ 4,00</td>
+                          <td>R$2,50</td>
+                          <td>50 cm</td>
+                        </tr>
+                        <tr>
+                          <td><b>SHAMPOO</b></td>
+                          <td>00000</td>
+                          <td>Dove</td>
+                          <td>50</td>
+                          <td>50 gramas</td>
+                          <td>1 caixa</td>
+                          <td>100 caixas</td>
+                          <td>R$ 4,00</td>
+                          <td>R$2,50</td>
+                          <td>50 cm</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--</div>-->
+<!--</div>-->

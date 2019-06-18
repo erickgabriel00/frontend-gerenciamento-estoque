@@ -1,0 +1,168 @@
+<div class="row">
+  <div class="col-md-12 d-flex align-items-stretch grid-margin">
+    <div class="row flex-grow">
+      <div class="col-md-12 grid-margin stretch-card">
+        <!--<div class="card">-->
+          <!--<div class="card-body">-->
+            <ngb-tabset class="tab-solid tab-solid-primary">
+              <ngb-tab>
+                <ng-template ngbTabTitle>
+                  <i class="mdi mdi-home-outline"></i>Cadastro
+                </ng-template>
+                <ng-template ngbTabContent>
+                  <form class="forms-sample">
+                    <div class="form-control">
+                      <label>Nome</label>
+                      <input type="text" formControlName="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-control">
+                      <label>Email</label>
+                      <input type="text" formControlName="email" placeholder="Email">
+                    </div>
+                    <div class="form-control">
+                      <label>Hora da entrada</label>
+                      <input type="time" formControlName="horaEntrada" placeholder="Hora da entrada">
+                    </div>
+                    <div class="form-control">
+                      <label>Hora da saída</label>
+                      <input type="time" formControlName="horaSaida" placeholder="Hora da saída">
+                    </div>
+                    <div class="form-control">
+                      <label>Função</label>
+                      <input type="text" formControlName="funcao" placeholder="Função">
+                    </div>
+                    <div class="form-control">
+                      <label>Senha</label>
+                      <input type="password" formControlName="senha" placeholder="Senha">
+                    </div>
+                    <div class="form-control">
+                      <label>Qualificação</label>
+                      <input type="text" formControlName="qualificacao" placeholder="Qualificação">
+                    </div>
+                    <div class="form-control">
+                      <label>CEP</label>
+                      <input type="text" formControlName="cep" placeholder="CEP">
+                    </div>
+                    <div class="form-control">
+                      <label>Endereço</label>
+                      <input type="text" formControlName="endereco" placeholder="Endereço">
+                    </div>
+                    <div class="form-control">
+                      <label>Número</label>
+                      <input type="text" formControlName="numero" placeholder="Número">
+                    </div>
+                    <div class="form-control">
+                      <label>Bairro</label>
+                      <input type="text" formControlName="bairro" placeholder="Bairro">
+                    </div>
+                    <div class="form-control">
+                      <label>Cidade</label>
+                      <input type="text" formControlName="cidade" placeholder="Cidade">
+                    </div>
+                    <div class="form-control">
+                      <label>UF</label>
+                      <input type="text" formControlName="uf" placeholder="UF">
+                    </div>
+                    <div class="form-control">
+                      <label>DDD/Telefone</label>
+                      <input type="text" formControlName="dddTelefone" placeholder="DDD/Telefone">
+                    </div>
+                    <div class="form-control">
+                      <label>Tipo documento</label>
+                      <input type="text" formControlName="tipoDocumento" placeholder="Tipo documento">
+                    </div>
+                    <div class="form-control">
+                      <label>CPF</label>
+                      <input type="text" formControlName="cpf" placeholder="CPF">
+                    </div>
+                    <div class="form-control">
+                      <label>Admissão</label>
+                      <input type="text" formControlName="admissao" placeholder="Admissão">
+                    </div>
+                    <div class="form-control">
+                      <label>Demissão</label>
+                      <input type="text" formControlName="demissao" placeholder="Demissão">
+                    </div>
+                    <div class="form-control">
+                      <label>RG</label>
+                      <input type="text" formControlName="rg" placeholder="RG">
+                    </div>
+                    <div class="form-control">
+                      <label>Orgão expeditor</label>
+                      <input type="text" formControlName="orgaoExpeditor" placeholder="Orgão expeditor">
+                    </div>
+                    <button type="submit" class="btn btn-success mr-2" [routerLink]="['/dashboard']">Salvar</button>
+                    <button class="btn btn-light">Cancelar</button>
+                  </form>
+                </ng-template>
+              </ngb-tab>
+
+              <ngb-tab>
+                <ng-template ngbTabTitle>
+                  <!--<div [ngBusy]="{busy: busy, message: 'Por favor aguarde...'}"></div>-->
+                  <!--<div class="card" *ngIf="listagemFuncionarios.length > 0"></div>-->
+
+                  <i class="mdi mdi-home-outline"></i>Listagem de funcionários
+                </ng-template>
+                <ng-template ngbTabContent>
+                  <div class="card-body text-center">
+                    <div class="table-responsive table-bordered">
+                      <!--<div class="pull-right mt-2 mr-2">-->
+                        <!--<button class="btn btn-hero-info btn-icon" style="cursor: pointer" type="button" title="Clique aqui para abrir o gráfico" (click)="graficoEvolucao(indice)">-->
+                          <!--<i class="nb-bar-chart"></i>-->
+                        <!--</button>-->
+                      <!--</div>-->
+                      <table class="table table-responsive table-bordered table-light">
+                        <thead>
+                        <tr>
+                          <th scope="col">Nome</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">CPF</th>
+                          <th scope="col">Endereço</th>
+                          <th scope="col">Hora da entrada</th>
+                          <th scope="col">Hora da saída</th>
+                          <th scope="col">Função</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td><b>ERICK GABRIEL N VIEIRA</b></td>
+                          <td>teste@teste.com</td>
+                          <td>023.384.244-44</td>
+                          <td>Av. Panorâmica</td>
+                          <td>08:00</td>
+                          <td>18:00</td>
+                          <td>Estocador</td>
+                        </tr>
+                        <tr>
+                          <td><b>ERICK GABRIEL N VIEIRA</b></td>
+                          <td>teste@teste.com</td>
+                          <td>023.384.244-44</td>
+                          <td>Av. Panorâmica</td>
+                          <td>08:00</td>
+                          <td>18:00</td>
+                          <td>Estocador</td>
+                        </tr>
+                        <tr>
+                          <td><b>LEONARDO GOMES LOBO</b></td>
+                          <td>teste@teste.com</td>
+                          <td>023.384.244-44</td>
+                          <td>Av. Panorâmica</td>
+                          <td>08:00</td>
+                          <td>18:00</td>
+                          <td>Caixa</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </ng-template>
+              </ngb-tab>
+            </ngb-tabset>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--</div>-->
+<!--</div>-->
